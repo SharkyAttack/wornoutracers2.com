@@ -1,0 +1,152 @@
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1281px) {
+    body {
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        /* Additional styling for footer */
+    }
+
+    .footer-divider{
+        position: fixed;
+        bottom: 8em;
+        width: 100%;
+    }
+
+    header{
+        /* background-color: rgb(0, 0, 0); */
+        height: 120px;
+        width: 100%;
+    }
+
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 95%;
+
+    }
+
+
+    .worbanner{
+        /* background-color: rgb(109, 109, 196); */
+        width: 85%;
+        height: 100px;
+        margin: 1rem;
+        justify-content: center;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .lane{
+        height: 2em;
+        border-radius: 1.5em;
+        margin-top: 0.2em;
+        margin-left: 3em;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+    }
+
+
+    .red-lane{
+        background-color: rgb(228,0,43);
+        Width: 70%
+        
+    }
+
+    .red-lane img{
+        height: 1.8em;
+        margin-left: 5em;
+    }
+
+    .white-lane{
+        background-color: rgb(255, 255, 255);
+        Width: 60%
+    }
+
+    .white-lane img{
+        height: 2em;
+        margin-left: 5em;
+        color: red;
+    }
+
+    .blue-lane{
+        background-color: rgb(0,122,194);
+        Width: 80%
+    }
+
+    .blue-lane img{
+        height: 1.7em;
+        margin-left: 5em;
+    }
+
+    .shield img{
+        height: 7em;
+        margin-left:auto;
+
+    }
+
+    .socials img{
+        margin-left: auto;
+    }
+
+    /* Animation of Cars */
+
+    @keyframes moveRight {
+        from { transform: translateX(0); }
+        to { transform: translateX(90%); } /* Adjust 100px to the desired distance */
+    }
+
+    .car {
+        animation: moveRight 2s ease-out forwards; /* Adjust 2s to control the speed */
+    }
+
+
+
+    @keyframes moveCarRight {
+        from {
+            left: 0;
+        }
+        to {
+            left: 40%;
+        }
+    }
+
+    .lane {
+        overflow: hidden;
+        /* other styles */
+    }
+
+    .car {
+        position: relative;
+        animation: moveCarRight 5s linear forwards;
+        /* Adjust the duration (5s) as needed */
+    }
+
+    .shield-socials{
+        display: flex;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .socials-list{
+        margin-top: 2em;
+        margin-left: -3em;
+    }
+
+    .divider{
+        background-color: rgb(73, 75, 77);
+        height: 2px;
+        width: 92%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
